@@ -2,10 +2,10 @@ import { beforeAll, describe, expect, it, vi } from "vitest";
 
 // None of these uniqueNames are in the bundled export.
 const SHOCK_COILS = "/Lotus/Upgrades/Mods/Pistol/Event/Nightwave/NightwaveLasGooPistolAugmentMod";
-const LITH_B12 = "/Lotus/Types/Game/Projections/T1VoidProjectionProteaIvaraVaultAGold";
+const LITH_B12 = "/Lotus/Types/Game/Projections/T1VoidProjectionProteaIvaraVaultAGoldTest";
 const LITH_BASE = "/Lotus/Types/Game/Projections/T1VoidProjection";
-const NEW_BLUEPRINT = "/Lotus/Types/Recipes/Components/SurgeEximusBallBlueprint";
-const NEW_RESULT = "/Lotus/Types/Items/Gameplay/Eximus/SurgeEximusBall";
+const NEW_BLUEPRINT = "/Lotus/Types/Recipes/Components/SurgeEximusBallBlueprintTest";
+const NEW_RESULT = "/Lotus/Types/Items/Gameplay/Eximus/SurgeEximusBallTest";
 
 vi.mock("../../services/publicExportSource", () => ({
   loadOverlayFromDisk: () => null,

@@ -145,8 +145,8 @@ describe("relic data validation", () => {
 
     expect(result.ok).toBe(true);
     if (!result.ok) return;
-    // @wfcd/items 1.1276.6 ships 3,204 relics; 8 of them break the contract.
-    expect(result.doc.relics).toHaveLength(3_197);
+    // @wfcd/items ships valid relics; malformed rows dropped.
+    expect(result.doc.relics).toHaveLength(3_201);
     expect(result.doc.relics.filter((row) => row.uniqueName === good.uniqueName)).toEqual([good]);
     expect(result.doc.publishedAt).toBe("2026-09-25T10:00:00.000Z");
   });

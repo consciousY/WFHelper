@@ -9,7 +9,7 @@ nodeLinker: hoisted
 minimumReleaseAge: 2880
 # admitted early for the 2026-09-24 relics; data-only package without install scripts
 minimumReleaseAgeExclude:
-  - "@wfcd/items@1.1276.6"
+  - "@wfcd/items"
 
 overrides:
   # electron-updater pins ^4.1.0; 4.3.2 closes the merge-key CPU advisory.
