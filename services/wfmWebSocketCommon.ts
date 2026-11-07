@@ -10,7 +10,7 @@ const WFM_WS_MAX_PAYLOAD_BYTES = 1024 * 1024;
 
 function buildWfmWsUserAgent(): string {
   const version = typeof app?.getVersion === "function" ? app.getVersion() : "0.0.0";
-  return `WFHelper/${version}`;
+  return `WFtoolz/${version}`;
 }
 
 function generateWfmWsId(): string {

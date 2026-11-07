@@ -84,4 +84,4 @@ export const VIEW_FONT_SIZE_MAX = 3;
 /** Base font size in px (from app.css html rule) */
 export const BASE_FONT_SIZE_PX = 15;
 
-export const DEFAULT_APP_NAME = "WFHELPER";
+export const DEFAULT_APP_NAME = "WFTOOLZ";

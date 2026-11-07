@@ -117,7 +117,7 @@ function applyFakeUpdateState(): boolean {
 
   setUpdateState("available", {
     version,
-    releaseName: `WFHelper ${version}`,
+    releaseName: `WFtoolz ${version}`,
     releaseDate: new Date().toISOString(),
     releaseNotes,
   });
