@@ -554,9 +554,9 @@ function liveMatchKey(event: TradeEvent): string {
 }
 
 /** An export covering an already-tracked period ships the same trade twice, and
- *  its rows carry no id the tracker ever saw. One day of slack absorbs a
- *  date-only export row against the live row's exact timestamp. */
-const LIVE_MATCH_WINDOW_MS = 24 * 60 * 60 * 1000;
+ *  its rows carry no id the tracker ever saw. 36 hours of slack absorbs a
+ *  date-only export row against the live row's exact timestamp across all time zones. */
+const LIVE_MATCH_WINDOW_MS = 36 * 60 * 60 * 1000;
 
 interface LiveCandidate {
   at: number;
