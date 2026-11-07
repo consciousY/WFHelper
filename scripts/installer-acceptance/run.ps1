@@ -61,7 +61,10 @@ try {
     }
     $setup.Refresh()
     if ($setup.ExitCode -ne 0) { throw "$phase installer failed with exit $($setup.ExitCode)" }
-    $executable = Join-Path $install "WFHelper.exe"
+    $executable = Join-Path $install "WFtoolz.exe"
+    if (-not (Test-Path $executable)) {
+      $executable = Join-Path $install "WFHelper.exe"
+    }
     $version = (Get-Item -LiteralPath $executable).VersionInfo.FileVersion
     if ($version -ne $entry.version) { throw "$phase installed version '$version', expected '$($entry.version)'" }
     $preferences = Get-Content -Raw -LiteralPath (Join-Path $profile "setup-preferences.json") | ConvertFrom-Json
